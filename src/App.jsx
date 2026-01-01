@@ -3,7 +3,7 @@ import ProductsPage from "./pages/ProductsPage.jsx";
 import OverviewPage from "./pages/OverviewPage.jsx";
 import Sidebar from './components/Sidebar.jsx'
 import UsersPage from "./pages/UsersPage.jsx";
-
+import SalesPage from "./pages/SalesPage.jsx";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Route path="/" element={<OverviewPage />} />
         <Route path="/products" element={<ProductsPage />}/>
         <Route path="/users" element={<UsersPage />}/>
+        <Route path="/sales" element={<SalesPage />}/>
       </Routes>
     </div>
   );
