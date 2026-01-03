@@ -4,7 +4,9 @@ import OverviewPage from "./pages/OverviewPage.jsx";
 import Sidebar from './components/Sidebar.jsx'
 import UsersPage from "./pages/UsersPage.jsx";
 import SalesPage from "./pages/SalesPage.jsx";
-
+import OrdersPage from "./pages/OrdersPage.jsx";
+import AnalyticsPage from "./pages/AnalyticsPage.jsx";
+import SettingsPage from "./pages/SettingsPage.jsx";
 function App() {
   return (
     <div className="flex h-screen bg-gray-950 text-gray-100 overflow-hidden">
@@ -21,6 +23,9 @@ function App() {
         <Route path="/products" element={<ProductsPage />}/>
         <Route path="/users" element={<UsersPage />}/>
         <Route path="/sales" element={<SalesPage />}/>
+        <Route path="/orders" element={<OrdersPage/>}/>
+        <Route path="/analytics" element={<AnalyticsPage/>}/>
+        <Route path="/settings" element={<SettingsPage/>}/>
       </Routes>
     </div>
   );
